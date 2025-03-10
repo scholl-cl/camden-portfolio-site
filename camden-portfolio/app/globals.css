@@ -358,12 +358,10 @@ article .icon {
 
 .project-img {
 	border-radius: 2rem;
-	width: 100%;
 	height: 100%;
+	width: 100%;
 	object-fit: contain;
 }
-
-
 
 .project-title {
 	margin: 1rem;
@@ -421,11 +419,17 @@ article .icon {
 footer {
 	height: 26vh;
 	margin: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 footer p {
 	text-align: center;
+	margin-top: 1rem;
 }
+
 
 /* MEDIA QUERIES */
 
@@ -588,6 +592,10 @@ footer p {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+	}
+
+	.article-container {
+		min-width: 50vw;
 	}
 }
 
