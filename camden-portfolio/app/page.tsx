@@ -104,7 +104,10 @@ const Home = () => {
 							height={32}
 							className="social-btn"
 							onClick={() =>
-								(window.open("https://www.linkedin.com/in/camden-scholl/", "_blank"))
+								window.open(
+									"https://www.linkedin.com/in/camden-scholl/",
+									"_blank"
+								)
 							}
 						/>
 						<Image
@@ -113,7 +116,9 @@ const Home = () => {
 							width={32}
 							height={32}
 							className="social-btn"
-							onClick={() => (window.open("https://github.com/c-l-scholl", "_blank"))}
+							onClick={() =>
+								window.open("https://github.com/c-l-scholl", "_blank")
+							}
 						/>
 					</div>
 				</div>
@@ -184,11 +189,12 @@ const Home = () => {
 						<div className="text-container">
 							<p>
 								I am a student-athlete at Macalester College majoring in
-								Computer Science and minoring in Japanese Langauge. I am also a starting pitcher for
-								the Macalester Scots Baseball Team. My technological interests are
-								IT, cybersecurity, web development, and making video games. In my free time, 
-								I play video games such as Valorant, Overcooked, and Mario Kart, weightlift, and
-								play guitar.
+								Computer Science and minoring in Japanese Langauge. I am also a
+								starting pitcher for the Macalester Scots Baseball Team. My
+								technological interests are IT, cybersecurity, web development,
+								and making video games. In my free time, I play video games such
+								as Valorant, Overcooked, and Mario Kart, weightlift, and play
+								guitar.
 							</p>
 						</div>
 					</div>
@@ -393,6 +399,44 @@ const Home = () => {
 						<div className="details-container color-container">
 							<div className="article-container">
 								<Image
+									src="/assets/kagichat3.png"
+									alt="kagichat image"
+									width={400}
+									height={400}
+									className="project-img project-3"
+								/>
+								<h2 className="experience-sub-title project-title">
+									KagiChat
+								</h2>
+								<div className="btn-container">
+									<button
+										className="btn btn-color-2 project-btn"
+										onClick={() =>
+											window.open(
+												"https://github.com/c-l-scholl/kagichat",
+												"_blank"
+											)
+										}
+									>
+										GitHub
+									</button>
+									<button
+										className="btn btn-color-2 project-btn project-3-btn"
+										onClick={() =>
+											window.open(
+												"https://github.com/c-l-scholl/kagichat",
+												"_blank"
+											)
+										}
+									>
+										Live Demo
+									</button>
+								</div>
+							</div>
+						</div>
+						<div className="details-container color-container">
+							<div className="article-container">
+								<Image
 									src="/assets/project-1-1.png"
 									alt="project 1"
 									width={400}
@@ -466,44 +510,6 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className="details-container color-container">
-							<div className="article-container">
-								<Image
-									src="/assets/project-3.png"
-									alt="project 3"
-									width={400}
-									height={400}
-									className="project-img project-3"
-								/>
-								<h2 className="experience-sub-title project-title">
-									Packet Sniffer
-								</h2>
-								<div className="btn-container">
-									<button
-										className="btn btn-color-2 project-btn"
-										onClick={() =>
-											window.open(
-												"https://github.com/c-l-scholl/python-packet-sniffer",
-												"_blank"
-											)
-										}
-									>
-										GitHub
-									</button>
-									<button
-										className="btn btn-color-2 project-btn project-3-btn"
-										onClick={() =>
-											window.open(
-												"https://github.com/c-l-scholl/python-packet-sniffer",
-												"_blank"
-											)
-										}
-									>
-										Live Demo
-									</button>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 				<Image
@@ -566,6 +572,7 @@ const Home = () => {
 						</ul>
 					</div>
 				</nav>
+				<a href="#profile">Return to Top</a>
 				<p>Copyright &#169; 2024 Camden Scholl. All Rights Reserved.</p>
 			</footer>
 		</div>
